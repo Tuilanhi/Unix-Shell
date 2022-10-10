@@ -122,7 +122,6 @@ int main()
 
     for (;;)
     {
-        check_for_background();
 
         // implementation date/time with TODO
         // implement username with getlogin()
@@ -135,6 +134,8 @@ int main()
 
         string input;
         getline(cin, input);
+
+        check_for_background();
 
         if (input.empty())
         {
